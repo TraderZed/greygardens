@@ -1,0 +1,240 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
+/* -----------------------
+  Colors
+-------------------------*/
+.lime {
+  color: #B4DA8E; }
+
+.sand {
+  color: #E3C0A1; }
+
+.coral {
+  color: #FFA195; }
+
+.cider {
+  color: #F7C77D; }
+
+.sage {
+  color: #799F94; }
+
+.slate {
+  color: rgba(0, 0, 0, 0.5); }
+
+.teal {
+  color: #83CDB9; }
+
+/* -----------------------
+  Fonts
+-------------------------*/
+/* -----------------------
+  Typography
+-------------------------*/
+body {
+  color: #000;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center; }
+
+h2 {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 58px;
+  line-height: 72px; }
+
+h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+h4 {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 30px; }
+
+p {
+  color: rgba(0, 0, 0, 0.5); }
+
+blockquote {
+  border: 0;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0; }
+
+div[class^="col-"] {
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.row {
+  margin-left: -25px;
+  margin-right: -25px; }
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
+
+body {
+  background: #fff; }
+
+header {
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 10; }
+  header h1 a {
+    display: block;
+    background: url(../images/logo.png) 0 0 no-repeat;
+    background-size: 100%;
+    height: 50px;
+    margin: 25px auto;
+    position: relative;
+    top: 10px;
+    text-indent: -999999px;
+    width: 180px; }
+  header nav {
+    font-family: "Work Sans", sans-serif;
+    margin: 34px 0; }
+    header nav ul {
+      list-style: none; }
+      header nav ul.row {
+        width: auto; }
+      header nav ul li:last-child {
+        cursor: text;
+        pointer-events: none;
+        text-decoration: line-through; }
+    header nav a {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 11px;
+      letter-spacing: 2px;
+      padding: 10px 15px;
+      text-transform: uppercase; }
+      header nav a:hover, header nav a:focus {
+        background: #f8f8f8;
+        color: rgba(0, 0, 0, 0.5);
+        text-decoration: none; }
+
+section .row {
+  padding: 65px 0; }
+
+section .menu-content {
+  color: rgba(0, 0, 0, 0.7);
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  section .menu-content h3 {
+    margin: 48px 0 30px 0; }
+  section .menu-content li {
+    font-size: 16px;
+    margin: 0 0 42px 0; }
+    section .menu-content li span {
+      font-style: italic; }
+      section .menu-content li span.description {
+        display: inline-block;
+        padding-right: 24px; }
+
+section.intro {
+  margin-top: 100px; }
+  section.intro .row {
+    padding-bottom: 260px; }
+    section.intro .row:first-child {
+      padding-top: 0; }
+  section.intro .intro-message {
+    padding-top: 25px; }
+  section.intro .seasonal-info {
+    text-align: left; }
+  section.intro .contact-info {
+    padding-top: 25px; }
+    section.intro .contact-info h2 {
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 20px; }
+    section.intro .contact-info .phone-number {
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin: 0; }
+    section.intro .contact-info .hours {
+      margin: 70px 0; }
+      section.intro .contact-info .hours ul {
+        list-style: none;
+        margin: 30px 0 0 0;
+        padding: 0; }
+        section.intro .contact-info .hours ul li {
+          color: rgba(0, 0, 0, 0.5);
+          font-size: 14px;
+          font-family: "Work Sans", sans-serif;
+          margin: 0 0 7px 0; }
+          section.intro .contact-info .hours ul li span {
+            display: inline-block;
+            width: 50%; }
+
+section.wine-bar {
+  background: url(../images/bg1.jpg) 0 0 no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  section.wine-bar .lead-image {
+    margin-top: -115px; }
+
+section.food .row {
+  padding-top: 0; }
+  section.food .row:first-child {
+    padding: 0 0 40px 0; }
+
+section.food .food-image {
+  margin-top: -80px;
+  margin-bottom: -100px; }
+
+section.food .menu-content li {
+  margin-bottom: 20px; }
+  section.food .menu-content li .description {
+    font-style: normal; }
+
+section.crew {
+  background: #F9F7F7; }
+  section.crew h3 {
+    line-height: 19px; }
+  section.crew img {
+    margin-bottom: 40px; }
+  section.crew p {
+    font-size: 16px; }
+  section.crew .row {
+    padding-bottom: 0; }
+    section.crew .row:last-child {
+      padding-bottom: 65px; }
+  section.crew .class-photo-image img {
+    background: #fff;
+    padding: 20px; }
+
+footer {
+  background: url(../images/bg2.jpg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150px; }
+
+.container {
+  padding: 0;
+  width: 100%; }
+
+.row {
+  margin: 0 auto;
+  padding: 0 15px; }
+
+@media (min-width: 768px) {
+  .row {
+    width: 750px; } }
+
+@media (min-width: 992px) {
+  .row {
+    width: 970px; } }
+
+@media (min-width: 1200px) {
+  .row {
+    width: 1170px; } }

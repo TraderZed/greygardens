@@ -17,10 +17,15 @@
   },
   "homepage": "https://github.com/TraderZed/greygardens#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^2.2.0"
+    "gulp": "latest",
+    "gulp-sass": "latest",
+    "gulp-coffee": "latest",
+    "gulp-uglify": "latest",
+    "gulp-concat": "latest",
+    "gulp-imagemin": "latest"
   },
   "dependencies": {
-    "gulp-haml": "^0.1.6"
+    "gulp-haml": "latest",
+    "lodash": "^4.17.4"
   }
 }

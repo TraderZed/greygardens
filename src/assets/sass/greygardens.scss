@@ -1,0 +1,235 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
+@import 'colors';
+@import 'typography';
+
+div[class^="col-"] {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+body {
+  background: #fff;
+}
+
+header {
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  h1 a {
+    display: block;
+    background: url(../images/logo.png) 0 0 no-repeat;
+    background-size: 100%;
+    height: 50px;
+    margin: 25px auto;
+    position: relative; top: 10px;
+    text-indent: -999999px;
+    width: 180px;
+  }
+  nav {
+    font-family: $WorkSans;
+    margin: 34px 0;
+
+    ul {
+      list-style: none;
+      &.row {
+        width: auto;
+      }
+      li {
+        &:last-child {
+          cursor: text;
+          pointer-events: none;
+          text-decoration: line-through;
+        }
+      }
+    }
+    a {
+      color: rgba(0, 0, 0, .5);
+      font-size: 11px;
+      letter-spacing: 2px;
+      padding: 10px 15px;
+      text-transform: uppercase;
+      &:hover,
+      &:focus {
+        background: #f8f8f8;
+        color: rgba(0, 0, 0, .5);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+section {
+  .row {
+    padding: 65px 0;
+  }
+  .menu-content {
+    color: rgba(0,0,0,.7);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    h3 {
+      margin: 48px 0 30px 0;
+    }
+    li {
+      font-size: 16px;
+      margin: 0 0 42px 0;
+      span {
+        font-style: italic;
+
+        &.description {
+          display: inline-block;
+          padding-right: 24px;
+        }
+      }
+    }
+  }
+
+  &.intro {
+    margin-top: 100px;
+    .row {
+      padding-bottom: 260px;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+    .intro-message {
+      padding-top: 25px;
+    }
+    .seasonal-info {
+      text-align: left;
+    }
+    .contact-info {
+      padding-top: 25px;
+      h2 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 20px;
+      }
+      .phone-number {
+        color: rgba(0, 0, 0, .7);
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin: 0 ;
+      }
+      .hours {
+        margin: 70px 0;
+        ul {
+          list-style: none;
+          margin: 30px 0 0 0;
+          padding: 0;
+          li {
+            color: $slate;
+            font-size: 14px;
+            font-family: $WorkSans;
+            margin: 0 0 7px 0;
+            span {
+              display: inline-block;
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.wine-bar {
+    background: url(../images/bg1.jpg) 0 0 no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .lead-image {
+      margin-top: -115px;
+    }
+  }
+  &.food {
+    .row {
+      padding-top: 0;
+      &:first-child {
+        padding: 0 0 40px 0;
+      }
+    }
+    .food-image {
+      margin-top: -80px;
+      margin-bottom: -100px;
+    }
+    .menu-content {
+      li {
+        margin-bottom: 20px;
+        .description {
+          font-style: normal;
+        }
+      }
+    }
+
+  }
+  &.crew {
+    background: #F9F7F7;
+    h3 {
+      line-height: 19px;
+    }
+    img {
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .row {
+      padding-bottom: 0;
+      &:last-child {
+        padding-bottom: 65px;
+      }
+    }
+    .class-photo-image {
+      img {
+        background: #fff;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+footer {
+  background: url(../images/bg2.jpg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.container {
+  padding: 0;
+  width: 100%;
+}
+
+.row {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .row {
+      width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .row {
+      width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row {
+      width: 1170px;
+  }
+}

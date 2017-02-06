@@ -7,90 +7,138 @@
 
     %link{ href: "https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,500,700|Work+Sans:400,500", rel: "stylesheet"}/
     %link{ crossorigin: "anonymous", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", integrity: "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", rel: "stylesheet" }/
-    %link{ href: "assets/css/greygardens.css", rel: "stylesheet", type: "text/css" }/
+    %link{ href: "public/assets/css/greygardens.css", rel: "stylesheet", type: "text/css" }/
 
-    %script{ crossorigin: "anonymous", integrity: "sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=", src: "https://code.jquery.com/jquery-3.1.1.min.js"}
-    %script{ crossorigin: "anonymous", integrity: "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" }
   %body
     .container
-      %section.intro
+      %header
         .row
           .col-md-4
-            %h3.lime A Note From Us
-            %h2 Come Toast With Us
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt, justo at rhoncus luctus, purus metus pellentesque sem, ac euismod lorem diam non quam. Sed pellentesque ultrices ligula. Nam porta velit vel arcu ornare, a laoreet dui sollicitudin. Quisque non ipsum risus. Aenean vitae est ac odio ornare luctus. Proin eu laoreet ante. In hac habitasse platea dictumst.
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt, justo at rhoncus luctus, purus metus pellentesque sem, ac euismod lorem diam non quam. Sed pellentesque ultrices ligula. Nam porta velit vel arcu ornare, a laoreet dui sollicitudin. Quisque non ipsum risus. Aenean vitae est ac odio ornare luctus. Proin eu laoreet ante. In hac habitasse platea dictumst.
-          .col-md-4
-            %img.img-responsive{ src: "https://placekitten.com/g/450/450" }
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          .col-md-4
-            %h3 Where to Find Us
-            %h2 199 Augusta Ave, Toronto
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt, justo at rhoncus luctus, purus metus pellentesque sem, ac euismod lorem diam non quam. Sed pellentesque ultrices ligula. Nam porta velit vel arcu ornare, a laoreet dui sollicitudin. Quisque non ipsum risus. Aenean vitae est ac odio ornare luctus. Proin eu laoreet ante. In hac habitasse platea dictumst.
+            %h1
+              %a.nav-home{href: "#"} Grey Gardens
+          .col-md-8
+            %nav
+              %ul.row
+                %li.col-md-3
+                  %a.nav-wine{href: "#"} Wine Bar
+                %li.col-md-3
+                  %a.nav-food{href: "#"} Tasting
+                %li.col-md-3
+                  %a.nav-crew{href: "#"} The Crew
+                %li.col-md-3
+                  %a{href: "/"} Reservations
+      %section.intro
+        .row
+          .col-md-4.intro-message
+            %h3.teal.js-copy-note-eyebrow
+            %h2.js-copy-note-header
+            %p.js-copy-note-body
+          .col-md-6
+            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8245.png" }
+          .col-md-2.contact-info
+            .seasonal-info.hidden
+              %h4.js-copy-seasonal-subheader
+              %p.js-copy-seasonal-body
+            %h3.coral.js-copy-address-eyebrow
+            %h2.js-copy-address-body
+            %h3.phone-number.js-copy-address-phone
+            .hours
+              %h3.sand.js-copy-hours-eyebrow
+              %ul
       %section.wine-bar
         .row
           .col-md-4
-            %h3.lime Wine Bar
-            %h2 Walk Into Our Wine Bar
-            %p Our wine bar is walk-in service Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          .col-md-8
-            %img.img-responsive{ src: "https://placekitten.com/g/864/512" }
+            %h3.lime.js-copy-wine-intro-eyebrow
+            %h2.js-copy-wine-intro-header
+            %p.js-copy-wine-intro-body
+          .col-md-8.lead-image
+            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8154.png" }
         .row
           .col-md-4
-            %h3.teal White
-            %p Our wine bar is walk-in service Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            %h3.teal Rosé
-            %p Our wine bar is walk-in service Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .wine-by-the-glass
+              %h4.js-copy-wine-bytheglass-header
+              %ul.menu-content.sparkling
+                %h3.sand.js-copy-wine-bytheglass-eyebrow1
+              %ul.menu-content.white
+                %h3.sand.js-copy-wine-bytheglass-eyebrow2
+              %ul.menu-content.rose
+                %h3.sand.js-copy-wine-bytheglass-eyebrow3
+              %ul.menu-content.orange
+                %h3.sand.js-copy-wine-bytheglass-eyebrow4
+              %ul.menu-content.red
+                %h3.sand.js-copy-wine-bytheglass-eyebrow5
+            .cider
+              %h4.js-copy-wine-cider-header
+              %ul.menu-content
+            %h3.teal.js-copy-wine-eyebrow-white
+            %h3.teal.js-copy-wine-eyebrow-rose
           .col-md-4
-            %h3.teal Red
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt, justo at rhoncus luctus, purus metus pellentesque sem, ac euismod lorem diam non quam. Sed pellentesque ultrices ligula. Nam porta velit vel arcu ornare, a laoreet dui sollicitudin. Quisque non ipsum risus. Aenean vitae est ac odio ornare luctus. Proin eu laoreet ante. In hac habitasse platea dictumst.
-            %h3.teal Orange
-            %p Our wine bar is walk-in service Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .red-wine-by-the-bottle
+              %h4.js-copy-wine-redbottle-header
+              %ul.menu-content
           .col-md-4
-            %h3.teal Cider
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt, justo at rhoncus luctus, purus metus pellentesque sem, ac euismod lorem diam non quam. Sed pellentesque ultrices ligula. Nam porta velit vel arcu ornare, a laoreet dui sollicitudin. Quisque non ipsum risus. Aenean vitae est ac odio ornare luctus. Proin eu laoreet ante. In hac habitasse platea dictumst.
-
+            .white-wine-by-the-bottle
+              %h4.js-copy-wine-whitebottle-header
+              %ul.menu-content
       %section.food
         .row
-          .col-md-2
-          .col-md-3
-            %h3.slate All Week
-            %h2 A la Carte
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
-          .col-md-2
-          .col-md-3
-            %h3.slate Thursday to Saturday
-            %h2 Tasting
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
-          .col-md-2
+          .col-md-3.food-image
+            %img.img-responsive.lazyload{ data-src: "public/assets/images/mushrooms.png" }
+        .row
+          .col-md-8.col-md-offset-2
+            %h2.js-copy-food-header1
+            %p.js-copy-food-body1
+        .row
+          .col-md-4.col-md-offset-2
+            %ul.menu-content.menu-content-1
+          .col-md-4
+            %ul.menu-content.menu-content-2
+            %img.img-responsive.lazyload{ data-src: "public/assets/images/mushroom3.png" }
+
       %section.crew
         .row
-          .col-md-4
-            %h2 The Crew
-          .col-md-8
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt, justo at rhoncus luctus, purus metus pellentesque sem, ac euismod lorem diam non quam. Sed pellentesque ultrices ligula. Nam porta velit vel arcu ornare, a laoreet dui sollicitudin. Quisque non ipsum risus. Aenean vitae est ac odio ornare luctus. Proin eu laoreet ante. In hac habitasse platea dictumst.
+          .col-md-4.vcenter
+            %h2.js-copy-crew-header
+          .col-md-8.vcenter
+            %p.js-copy-crew-body
         .row
           .col-md-4
-            %img.img-responsive{ src: "https://placekitten.com/g/350/460" }
-            %h3 Jen Agg
-            %p Our wine bar is walk-in service Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8176.png" }
+            %h3.js-copy-bio1-subheader
+            %p.js-copy-bio1-body
           .col-md-4
-            %img.img-responsive{ src: "https://placekitten.com/g/350/460" }
-            %h3 Mitch
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt, justo at rhoncus luctus, purus metus pellentesque sem, ac euismod lorem diam non quam. Sed pellentesque ultrices ligula. Nam porta velit vel arcu ornare, a laoreet dui sollicitudin. Quisque non ipsum risus. Aenean vitae est ac odio ornare luctus. Proin eu laoreet ante. In hac habitasse platea dictumst.
+            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A7751.png" }
+            %h3.js-copy-bio2-subheader
+            %p.js-copy-bio2-body
           .col-md-4
-            %img.img-responsive{ src: "https://placekitten.com/g/350/460" }
-            %h3 Jake
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt, justo at rhoncus luctus, purus metus pellentesque sem, ac euismod lorem diam non quam. Sed pellentesque ultrices ligula. Nam porta velit vel arcu ornare, a laoreet dui sollicitudin. Quisque non ipsum risus. Aenean vitae est ac odio ornare luctus. Proin eu laoreet ante. In hac habitasse platea dictumst.
+            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A7872.png" }
+            %h3.js-copy-bio3-subheader
+            %p.js-copy-bio3-body
         .row
-          .col-md-8
-            %img.img-responsive{ src: "https://placekitten.com/g/800/565" }
+          .col-md-4.col-md-offset-2
+            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8012.png" }
+            %h3.js-copy-bio4-subheader
+            %p.js-copy-bio4-body
           .col-md-4
-            %h3.sage Our Crew
-            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt, justo at rhoncus luctus, purus metus pellentesque sem, ac euismod lorem diam non quam. Sed pellentesque ultrices ligula. Nam porta velit vel arcu ornare, a laoreet dui sollicitudin. Quisque non ipsum risus. Aenean vitae est ac odio ornare luctus. Proin eu laoreet ante. In hac habitasse platea dictumst.
+            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8100.png" }
+            %h3.js-copy-bio5-subheader
+            %p.js-copy-bio5-body
+        .row
+          .col-md-8.class-photo-image
+            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A7615.png" }
+          .col-md-4
+            %h3.sage.js-copy-class-eyebrow
+            %h2.js-copy-class-header
+            %p.js-copy-class-body
       %section.quote
         .row
           .col-md-1
           .col-md-10
-            %blockquote Really, the ultimate goal is to make a restaurant so good, that even if you come to hate fuck it, you'll have to admit it was still a great fuck.
+            %blockquote.js-copy-quote-body
           .col-md-1
+      %footer
+
+  %script{ crossorigin: "anonymous", integrity: "sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=", src: "https://code.jquery.com/jquery-3.1.1.min.js"}
+  %script{ crossorigin: "anonymous", integrity: "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" }
+  %script{ src: "public/assets/js/lazysizes.min.js" }
+  %script{ src: "public/assets/js/greygardens.js" }

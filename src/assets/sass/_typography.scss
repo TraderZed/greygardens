@@ -1,0 +1,54 @@
+/* -----------------------
+  Fonts
+-------------------------*/
+
+$WorkSans: 'Work Sans', sans-serif;
+$Cormorant: 'Cormorant Garamond', serif;
+
+/* -----------------------
+  Typography
+-------------------------*/
+
+body {
+  color: #000;
+  font-family: $Cormorant;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+h2 {
+  color: rgba(0,0,0, .7);
+  font-size: 58px;
+  line-height: 72px;
+}
+
+h3 {
+  font-family: $WorkSans;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: rgba(0,0,0, .7);
+  font-family: $Cormorant;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+p {
+  color: rgba(0,0,0, .5);
+}
+
+blockquote {
+  border: 0;
+  color: rgba(0, 0, 0, .7);
+  font-family: $Cormorant;
+  font-style: italic;
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
