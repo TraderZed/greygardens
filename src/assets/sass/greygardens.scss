@@ -23,48 +23,73 @@ body {
 }
 
 header {
-  background: #fff;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
   h1 a {
     display: block;
-    background: url(../images/logo.png) 0 0 no-repeat;
-    background-size: 100%;
+    background: url(../images/logo.png) center 0 no-repeat;
+    background-size: 50%;
     height: 50px;
-    margin: 25px auto;
-    position: relative; top: 10px;
     text-indent: -999999px;
-    width: 180px;
   }
-  nav {
+  nav.navbar-default {
+    background: #fff;
+    border: 0;
     font-family: $WorkSans;
-    margin: 34px 0;
-
-    ul {
-      list-style: none;
-      &.row {
-        width: auto;
+    min-height: 75px;
+    .navbar-header {
+      float: none;
+      .navbar-brand {
+        float: none;
       }
-      li {
-        &:last-child {
-          cursor: text;
-          pointer-events: none;
-          text-decoration: line-through;
+    }
+    .navbar-toggle {
+      border: 0;
+      position: absolute; right: 0; top: 15px;
+      &:hover,
+      &:active,
+      &:focus {
+        background: #fff;
+      }
+    }
+    .navbar-collapse {
+      border: 0;
+      &.in,
+      &.collapsing {
+        .navbar-nav {
+          margin: 0;
+          padding: 0 0 20px 0;
+          li {
+            width: auto;
+          }
         }
       }
     }
-    a {
-      color: rgba(0, 0, 0, .5);
-      font-size: 11px;
-      letter-spacing: 2px;
-      padding: 10px 15px;
-      text-transform: uppercase;
-      &:hover,
-      &:focus {
-        background: #f8f8f8;
-        color: rgba(0, 0, 0, .5);
-        text-decoration: none;
+    ul.navbar-nav {
+      list-style: none;
+      padding: 30px 0;
+      width: 100%;
+      li {
+        width: 25%;
+        &:last-child {
+          a {
+            cursor: text;
+            pointer-events: none;
+            text-decoration: line-through;
+          }
+        }
+        a {
+          color: rgba(0, 0, 0, .5);
+          display: inline-block;
+          font-size: 11px;
+          letter-spacing: 2px;
+          padding: 10px 15px;
+          text-transform: uppercase;
+          &:hover,
+          &:focus {
+            background: #f8f8f8;
+            color: rgba(0, 0, 0, .5);
+            text-decoration: none;
+          }
+        }
       }
     }
   }

@@ -10,32 +10,39 @@
     %link{ href: "public/assets/css/greygardens.css", rel: "stylesheet", type: "text/css" }/
 
   %body
+    %header
+      %nav.navbar.navbar-default.navbar-fixed-top
+        .container
+          .row
+            .col-sm-4
+              .navbar-header
+                %h1.navbar-brand
+                  %a.nav-home{href: "#"} Grey Gardens
+                %button.navbar-toggle{type: "button", data-toggle: "collapse", data-target: ".navbar-collapse"}
+                  .icon-bar
+                  .icon-bar
+                  .icon-bar
+            .col-sm-8
+              .collapse.navbar-collapse
+                %ul.nav.navbar-nav
+                  %li
+                    %a.nav-wine{href: "#"} Wine Bar
+                  %li
+                    %a.nav-food{href: "#"} Food
+                  %li
+                    %a.nav-crew{href: "#"} The Crew
+                  %li
+                    %a{href: "/"} Reservations
     .container
-      %header
-        .row
-          .col-md-4
-            %h1
-              %a.nav-home{href: "#"} Grey Gardens
-          .col-md-8
-            %nav
-              %ul.row
-                %li.col-md-3
-                  %a.nav-wine{href: "#"} Wine Bar
-                %li.col-md-3
-                  %a.nav-food{href: "#"} Tasting
-                %li.col-md-3
-                  %a.nav-crew{href: "#"} The Crew
-                %li.col-md-3
-                  %a{href: "/"} Reservations
       %section.intro
         .row
-          .col-md-4.intro-message
+          .col-md-4.col-sm-12.intro-message
             %h3.teal.js-copy-note-eyebrow
             %h2.js-copy-note-header
             %p.js-copy-note-body
-          .col-md-6
+          .col-md-6.col-sm-6
             %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8245.png" }
-          .col-md-2.contact-info
+          .col-md-2.col-sm-6.contact-info
             .seasonal-info.hidden
               %h4.js-copy-seasonal-subheader
               %p.js-copy-seasonal-body
@@ -47,14 +54,14 @@
               %ul
       %section.wine-bar
         .row
-          .col-md-4
+          .col-md-4.col-sm-12
             %h3.lime.js-copy-wine-intro-eyebrow
             %h2.js-copy-wine-intro-header
             %p.js-copy-wine-intro-body
-          .col-md-8.lead-image
+          .col-md-8.col-sm-12.lead-image
             %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8154.png" }
         .row
-          .col-md-4
+          .col-md-4.col-sm-4
             .wine-by-the-glass
               %h4.js-copy-wine-bytheglass-header
               %ul.menu-content.sparkling
@@ -72,26 +79,26 @@
               %ul.menu-content
             %h3.teal.js-copy-wine-eyebrow-white
             %h3.teal.js-copy-wine-eyebrow-rose
-          .col-md-4
+          .col-md-4.col-sm-4
             .red-wine-by-the-bottle
               %h4.js-copy-wine-redbottle-header
               %ul.menu-content
-          .col-md-4
+          .col-md-4.col-sm-4
             .white-wine-by-the-bottle
               %h4.js-copy-wine-whitebottle-header
               %ul.menu-content
       %section.food
         .row
-          .col-md-3.food-image
+          .col-sm-3.col-xs-6.food-image
             %img.img-responsive.lazyload{ data-src: "public/assets/images/mushrooms.png" }
         .row
           .col-md-8.col-md-offset-2
             %h2.js-copy-food-header1
             %p.js-copy-food-body1
         .row
-          .col-md-4.col-md-offset-2
+          .col-sm-4.col-sm-offset-2
             %ul.menu-content.menu-content-1
-          .col-md-4
+          .col-sm-4
             %ul.menu-content.menu-content-2
             %img.img-responsive.lazyload{ data-src: "public/assets/images/mushroom3.png" }
 
@@ -102,40 +109,40 @@
           .col-md-8.vcenter
             %p.js-copy-crew-body
         .row
-          .col-md-4
+          .col-sm-4
             %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8176.png" }
             %h3.js-copy-bio1-subheader
             %p.js-copy-bio1-body
-          .col-md-4
+          .col-sm-4
             %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A7751.png" }
             %h3.js-copy-bio2-subheader
             %p.js-copy-bio2-body
-          .col-md-4
+          .col-sm-4
             %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A7872.png" }
             %h3.js-copy-bio3-subheader
             %p.js-copy-bio3-body
         .row
-          .col-md-4.col-md-offset-2
+          .col-sm-4.col-sm-offset-2
             %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8012.png" }
             %h3.js-copy-bio4-subheader
             %p.js-copy-bio4-body
-          .col-md-4
+          .col-sm-4
             %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8100.png" }
             %h3.js-copy-bio5-subheader
             %p.js-copy-bio5-body
         .row
-          .col-md-8.class-photo-image
+          .col-md-8.col-sm-12.class-photo-image
             %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A7615.png" }
-          .col-md-4
+          .col-md-4.col-sm-12
             %h3.sage.js-copy-class-eyebrow
             %h2.js-copy-class-header
             %p.js-copy-class-body
       %section.quote
         .row
-          .col-md-1
-          .col-md-10
+          .col-sm-1
+          .col-sm-10
             %blockquote.js-copy-quote-body
-          .col-md-1
+          .col-sm-1
       %footer
 
   %script{ crossorigin: "anonymous", integrity: "sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=", src: "https://code.jquery.com/jquery-3.1.1.min.js"}
