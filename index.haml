@@ -36,13 +36,16 @@
     .container
       %section.intro
         .row
-          .col-md-4.col-sm-12.intro-message
+          .col-md-4.col-sm-8.intro-message
+            .fade-box
+              %img.visible-sm-block.img-responsive.lazyload{ data-src: "public/assets/images/L99A8245.png" }
             %h3.teal.js-copy-note-eyebrow
             %h2.js-copy-note-header
             %p.js-copy-note-body
-          .col-md-6.col-sm-6
-            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8245.png" }
-          .col-md-2.col-sm-6.contact-info
+          .col-md-6.hidden-sm
+            .fade-box
+              %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8245.png" }
+          .col-md-2.col-sm-4.contact-info
             .seasonal-info.hidden
               %h4.js-copy-seasonal-subheader
               %p.js-copy-seasonal-body
@@ -57,14 +60,15 @@
               %ul
       %section.wine-bar
         .row
-          .col-md-4.col-sm-12
+          .visible-sm-block.visible-xs-block.col-xs-12.mobile-lead-image.fade-box
+            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8154.png" }
+          .col-md-4.col-sm-8.col-sm-offset-2.col-md-offset-0
             %h3.lime.js-copy-wine-intro-eyebrow
             %h2.js-copy-wine-intro-header
             %p.js-copy-wine-intro-body
-          .visible-md-8.hidden-sm.hidden-xs.col-md-8.lead-image
+          .visible-md-8.hidden-sm.hidden-xs.col-md-8.lead-image.fade-box
             %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8154.png" }
-          .visible-sm-block.visible-xs-block.col-xs-12
-            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8154.png" }
+
         .row
           .col-md-4.col-sm-4
             .wine-by-the-glass
@@ -94,51 +98,85 @@
               %ul.menu-content
       %section.food
         .row
-          .col-sm-3.col-xs-6.food-image
+          .col-sm-3.col-xs-6.food-image.fade-box
             %img.img-responsive.lazyload{ data-src: "public/assets/images/mushrooms.png" }
         .row
-          .col-md-8.col-md-offset-2
+          .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
+            %h3.coral.js-copy-food-eyebrow1
             %h2.js-copy-food-header1
             %p.js-copy-food-body1
         .row
-          .col-sm-4.col-sm-offset-2
+          .col-md-4.col-md-offset-2.col-sm-6
             %ul.menu-content.menu-content-1
-          .col-sm-4
+          .col-md-4.col-sm-6
             %ul.menu-content.menu-content-2
-            %img.img-responsive.lazyload{ data-src: "public/assets/images/mushroom3.png" }
-
-      %section.crew.hidden-xs.hidden-sm
+            .fade-box
+              %img.img-responsive.lazyload{ data-src: "public/assets/images/mushroom3.png" }
+      %section.crew.hidden-xs
         .row
-          .col-md-4.vcenter
+          .col-md-4.col-sm-8.vcenter
             %h2.js-copy-crew-header
-          .col-md-8.vcenter
+          .col-md-8.col-sm-8.vcenter
             %p.js-copy-crew-body
         .row
-          .col-md-8.col-sm-12.class-photo-image.col-md-offset-2
+          .col-md-8.col-sm-12.class-photo-image.col-md-offset-2.fade-box
             %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A7615.png" }
           .col-md-6.col-sm-12.col-md-offset-3
             %h3.sage.js-copy-class-eyebrow
             %p.js-copy-class-body
-        .row
-          .col-sm-4
-            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8176.png" }
+        .row.visible-xs-block.visible-sm-block
+          .col-sm-6
+            .fade-box
+              %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8176.png" }
             %h3.js-copy-bio1-subheader
             %p.js-copy-bio1-body
-          .col-sm-4
-            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A7751.png" }
+          .col-sm-6
+            .fade-box
+              %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A7751.png" }
             %h3.js-copy-bio2-subheader
             %p.js-copy-bio2-body
-          .col-sm-4
-            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A7872.png" }
+        .row.visible-xs-block.visible-sm-block
+          .col-sm-6
+            .fade-box
+              %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A7872.png" }
             %h3.js-copy-bio3-subheader
             %p.js-copy-bio3-body
-        .row
-          .col-sm-4.col-sm-offset-2
-            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8012.png" }
+          .col-sm-6
+            .fade-box
+              %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8012.png" }
             %h3.js-copy-bio4-subheader
             %p.js-copy-bio4-body
-          .col-sm-4
-            %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8100.png" }
+        .row.visible-xs-block.visible-sm-block
+          .col-sm-6.col-sm-offset-3
+            .fade-box
+              %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8100.png" }
+            %h3.js-copy-bio5-subheader
+            %p.js-copy-bio5-body
+        .row.hidden-xs.hidden-sm
+          .col-md-4
+            .fade-box
+              %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8176.png" }
+            %h3.js-copy-bio1-subheader
+            %p.js-copy-bio1-body
+          .col-md-4
+            .fade-box
+              %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A7751.png" }
+            %h3.js-copy-bio2-subheader
+            %p.js-copy-bio2-body
+          .col-md-4
+            .fade-box
+              %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A7872.png" }
+            %h3.js-copy-bio3-subheader
+            %p.js-copy-bio3-body
+        .row.hidden-xs.hidden-sm
+          .col-md-4.col-md-offset-2
+            .fade-box
+              %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8012.png" }
+            %h3.js-copy-bio4-subheader
+            %p.js-copy-bio4-body
+          .col-md-4
+            .fade-box
+              %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8100.png" }
             %h3.js-copy-bio5-subheader
             %p.js-copy-bio5-body
 

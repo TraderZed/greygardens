@@ -71,6 +71,15 @@ div[class^="col-"] {
   padding-left: 25px;
   padding-right: 25px; }
 
+.fade-box .lazyload,
+.fade-box .lazyloading {
+  opacity: 0;
+  transition: opacity 400ms; }
+
+.fade-box .lazyloaded {
+  opacity: 1;
+  transition: opacity 400ms; }
+
 .row {
   margin-left: -25px;
   margin-right: -25px; }
@@ -162,6 +171,8 @@ section.intro {
       padding-top: 0; }
   section.intro .intro-message {
     padding-top: 25px; }
+    section.intro .intro-message img.visible-sm-block {
+      margin-bottom: 40px; }
   section.intro .seasonal-info {
     text-align: left; }
   section.intro .contact-info {
@@ -191,12 +202,12 @@ section.intro {
             display: inline-block;
             width: 50%; }
 
-section.wine-bar {
-  background: url(../images/bg1.jpg) 0 0 no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
-  section.wine-bar .lead-image {
-    margin-top: -115px; }
+section.wine-bar .lead-image {
+  margin-top: -115px; }
+
+section.wine-bar .mobile-lead-image {
+  margin-top: -200px;
+  margin-bottom: 40px; }
 
 section.food .row {
   padding-top: 0; }
@@ -213,7 +224,8 @@ section.food .menu-content li {
     font-style: normal; }
 
 section.crew {
-  background: #F9F7F7; }
+  background: #F9F7F7;
+  padding-bottom: 65px; }
   section.crew h3 {
     line-height: 19px; }
   section.crew img {
@@ -222,8 +234,6 @@ section.crew {
     font-size: 16px; }
   section.crew .row {
     padding-bottom: 0; }
-    section.crew .row:last-child {
-      padding-bottom: 65px; }
   section.crew .class-photo-image img {
     background: #fff;
     padding: 20px; }
@@ -244,12 +254,34 @@ footer {
 
 @media (min-width: 768px) {
   .row {
-    width: 750px; } }
+    width: 750px; }
+  header h1 a {
+    background-size: 100%; }
+  .intro .intro-message h2 {
+    margin-top: 0;
+    font-size: 42px; }
+  .wine-bar {
+    background: #f4f4f4; } }
 
 @media (min-width: 992px) {
   .row {
-    width: 970px; } }
+    width: 970px; }
+  header h1 a {
+    background-size: 75%; }
+  .intro .intro-message h2 {
+    margin-top: 0;
+    font-size: 42px; }
+  .wine-bar {
+    background: #f4f4f4; } }
 
 @media (min-width: 1200px) {
   .row {
-    width: 1170px; } }
+    width: 1170px; }
+  header h1 a {
+    background-size: 50%; }
+  .intro .intro-message h2 {
+    font-size: 58px; }
+  .wine-bar {
+    background: url(../images/bg1.jpg) 0 0 no-repeat;
+    background-size: cover;
+    background-attachment: fixed; } }
