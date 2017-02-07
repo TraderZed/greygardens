@@ -42,6 +42,12 @@ class @GreyGardens
       success: (data) =>
         @populateHours(data)
     )
+    $.ajax(
+      type: "GET",
+      url:  "https://the-black-hoof.firebaseio.com/grey_gardens_kitchen_hours.json",
+      success: (data) =>
+        @populateFoodHours(data)
+    )
   @getWineByTheGlass: ->
     $.ajax(
       type: "GET",
@@ -210,6 +216,9 @@ class @GreyGardens
 
   @populateHours: (copy) ->
     $.each copy, (i, val) ->
-      $('.hours ul').append('<li><span class="day">' + val.day + '</span><span class="time">' + val.hours + '</span></li>')
+      $('.wine-hours ul').append('<li><span class="day">' + val.day + '</span><span class="time">' + val.hours + '</span></li>')
+  @populateFoodHours: (copy) ->
+    $.each copy, (i, val) ->
+      $('.food-hours ul').append('<li><span class="day">' + val.day + '</span><span class="time">' + val.hours + '</span></li>')
 
 window.GreyGardens.init()
