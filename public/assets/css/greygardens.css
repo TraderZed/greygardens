@@ -38,8 +38,8 @@ body {
 
 h2 {
   color: rgba(0, 0, 0, 0.7);
-  font-size: 58px;
-  line-height: 72px; }
+  font-size: 48px;
+  line-height: 56px; }
 
 h3 {
   font-family: "Work Sans", sans-serif;
@@ -62,10 +62,55 @@ blockquote {
   color: rgba(0, 0, 0, 0.7);
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 400;
   margin: 0;
   padding: 0; }
+
+@media (min-width: 768px) {
+  h2 {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 48px;
+    line-height: 56px; }
+  blockquote {
+    border: 0;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0; } }
+
+@media (min-width: 992px) {
+  h2 {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 58px;
+    line-height: 72px; }
+  blockquote {
+    border: 0;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0; } }
+
+@media (min-width: 1200px) {
+  h2 {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 58px;
+    line-height: 72px; }
+  blockquote {
+    border: 0;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0; } }
 
 div[class^="col-"] {
   padding-left: 25px;
@@ -128,10 +173,6 @@ header nav.navbar-default {
     width: 100%; }
     header nav.navbar-default ul.navbar-nav li {
       width: 25%; }
-      header nav.navbar-default ul.navbar-nav li:last-child a {
-        cursor: text;
-        pointer-events: none;
-        text-decoration: line-through; }
       header nav.navbar-default ul.navbar-nav li a {
         color: rgba(0, 0, 0, 0.5);
         display: inline-block;
@@ -202,17 +243,18 @@ section.intro {
             display: inline-block;
             width: 50%; }
 
-section.wine-bar .lead-image {
-  margin-top: -115px; }
-
-section.wine-bar .mobile-lead-image {
-  margin-top: -200px;
-  margin-bottom: 40px; }
+section.wine-bar {
+  background-color: #f8f8f8; }
+  section.wine-bar .lead-image {
+    margin-top: -115px; }
+  section.wine-bar .mobile-lead-image {
+    margin-top: -200px;
+    margin-bottom: 40px; }
 
 section.food .row {
   padding-top: 0; }
   section.food .row:first-child {
-    padding: 0 0 40px 0; }
+    padding: 40px 0; }
 
 section.food .food-image {
   margin-top: -80px;
@@ -221,22 +263,23 @@ section.food .food-image {
 section.food .menu-content li {
   margin-bottom: 20px; }
   section.food .menu-content li .description {
+    display: inline;
     font-style: normal; }
 
 section.crew {
   background: #F9F7F7;
-  padding-bottom: 65px; }
+  padding: 65px 0; }
   section.crew h3 {
     line-height: 19px; }
   section.crew img {
-    margin-bottom: 40px; }
+    margin: 80px 0 40px 0; }
   section.crew p {
     font-size: 16px; }
   section.crew .row {
-    padding-bottom: 0; }
+    padding: 0; }
   section.crew .class-photo-image img {
     background: #fff;
-    padding: 20px; }
+    padding: 10px; }
 
 footer {
   background: url(../images/bg2.jpg) center no-repeat;
@@ -261,7 +304,12 @@ footer {
     margin-top: 0;
     font-size: 42px; }
   .wine-bar {
-    background: #f4f4f4; } }
+    background: #f8f8f8; }
+  .food .row:first-child {
+    padding: 40px 0; }
+  section.crew .class-photo-image img {
+    background: #fff;
+    padding: 10px; } }
 
 @media (min-width: 992px) {
   .row {
@@ -272,7 +320,12 @@ footer {
     margin-top: 0;
     font-size: 42px; }
   .wine-bar {
-    background: #f4f4f4; } }
+    background: #f8f8f8; }
+  .food .row:first-child {
+    padding: 40px 0; }
+  section.crew .class-photo-image img {
+    background: #fff;
+    padding: 20px; } }
 
 @media (min-width: 1200px) {
   .row {
@@ -284,4 +337,9 @@ footer {
   .wine-bar {
     background: url(../images/bg1.jpg) 0 0 no-repeat;
     background-size: cover;
-    background-attachment: fixed; } }
+    background-attachment: fixed; }
+  section.food .row:first-child {
+    padding: 0 0 40px 0; }
+  section.crew .class-photo-image img {
+    background: #fff;
+    padding: 20px; } }

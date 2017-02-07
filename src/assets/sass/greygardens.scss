@@ -81,13 +81,6 @@ header {
       width: 100%;
       li {
         width: 25%;
-        &:last-child {
-          a {
-            cursor: text;
-            pointer-events: none;
-            text-decoration: line-through;
-          }
-        }
         a {
           color: rgba(0, 0, 0, .5);
           display: inline-block;
@@ -185,6 +178,7 @@ section {
     }
   }
   &.wine-bar {
+    background-color: #f8f8f8;
     .lead-image {
       margin-top: -115px;
     }
@@ -197,7 +191,7 @@ section {
     .row {
       padding-top: 0;
       &:first-child {
-        padding: 0 0 40px 0;
+        padding: 40px 0;
       }
     }
     .food-image {
@@ -208,6 +202,7 @@ section {
       li {
         margin-bottom: 20px;
         .description {
+          display: inline;
           font-style: normal;
         }
       }
@@ -216,23 +211,23 @@ section {
   }
   &.crew {
     background: #F9F7F7;
-    padding-bottom: 65px;
+    padding: 65px 0;
     h3 {
       line-height: 19px;
     }
     img {
-      margin-bottom: 40px;
+      margin: 80px 0 40px 0;
     }
     p {
       font-size: 16px;
     }
     .row {
-      padding-bottom: 0;
+      padding: 0;
     }
     .class-photo-image {
       img {
         background: #fff;
-        padding: 20px;
+        padding: 10px;
       }
     }
   }
@@ -269,7 +264,20 @@ footer {
     }
   }
   .wine-bar {
-    background: #f4f4f4;
+    background: #f8f8f8;
+  }
+  .food {
+    .row {
+      &:first-child {
+        padding: 40px 0;
+      }
+    }
+  }
+  section.crew .class-photo-image {
+    img {
+      background: #fff;
+      padding: 10px;
+    }
   }
 }
 
@@ -287,7 +295,20 @@ footer {
     }
   }
   .wine-bar {
-    background: #f4f4f4;
+    background: #f8f8f8;
+  }
+  .food {
+    .row {
+      &:first-child {
+        padding: 40px 0;
+      }
+    }
+  }
+  section.crew .class-photo-image {
+    img {
+      background: #fff;
+      padding: 20px;
+    }
   }
 }
 
@@ -307,5 +328,18 @@ footer {
     background: url(../images/bg1.jpg) 0 0 no-repeat;
     background-size: cover;
     background-attachment: fixed;
+  }
+  section.food {
+    .row {
+      &:first-child {
+        padding: 0 0 40px 0;
+      }
+    }
+  }
+  section.crew .class-photo-image {
+    img {
+      background: #fff;
+      padding: 20px;
+    }
   }
 }

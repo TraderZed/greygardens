@@ -16,13 +16,11 @@ body {
   font-weight: 400;
   text-align: center;
 }
-
 h2 {
   color: rgba(0,0,0, .7);
-  font-size: 58px;
-  line-height: 72px;
+  font-size: 48px;
+  line-height: 56px;
 }
-
 h3 {
   font-family: $WorkSans;
   font-size: 12px;
@@ -47,8 +45,62 @@ blockquote {
   color: rgba(0, 0, 0, .7);
   font-family: $Cormorant;
   font-style: italic;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 400;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    color: rgba(0,0,0, .7);
+    font-size: 48px;
+    line-height: 56px;
+  }
+  blockquote {
+    border: 0;
+    color: rgba(0, 0, 0, .7);
+    font-family: $Cormorant;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    color: rgba(0,0,0, .7);
+    font-size: 58px;
+    line-height: 72px;
+  }
+  blockquote {
+    border: 0;
+    color: rgba(0, 0, 0, .7);
+    font-family: $Cormorant;
+    font-style: italic;
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    color: rgba(0,0,0, .7);
+    font-size: 58px;
+    line-height: 72px;
+  }
+  blockquote {
+    border: 0;
+    color: rgba(0, 0, 0, .7);
+    font-family: $Cormorant;
+    font-style: italic;
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
 }

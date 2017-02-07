@@ -32,17 +32,17 @@
                   %li
                     %a.nav-crew{href: "#"} The Crew
                   %li
-                    %a{href: "/"} Reservations
+                    %a{href: "https://www.bookenda.com/restaurant-booker?businessName=grey-gardens&idMerchant=13123322&idClientApplication=4412&Language=en", target: "_blank"} Reservations
     .container
       %section.intro
         .row
           .col-md-4.col-sm-8.intro-message
             .fade-box
-              %img.visible-sm-block.img-responsive.lazyload{ data-src: "public/assets/images/L99A8245.png" }
+              %img.visible-xs-block.visible-sm-block.img-responsive.lazyload{ data-src: "public/assets/images/L99A8245.png" }
             %h3.teal.js-copy-note-eyebrow
             %h2.js-copy-note-header
             %p.js-copy-note-body
-          .col-md-6.hidden-sm
+          .col-md-6.hidden-sm.hidden-xs
             .fade-box
               %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8245.png" }
           .col-md-2.col-sm-4.contact-info
@@ -98,7 +98,7 @@
               %ul.menu-content
       %section.food
         .row
-          .col-sm-3.col-xs-6.food-image.fade-box
+          .col-sm-3.col-xs-6.col-xs-offset-3.col-sm-offset-0.food-image.fade-box
             %img.img-responsive.lazyload{ data-src: "public/assets/images/mushrooms.png" }
         .row
           .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
@@ -112,7 +112,7 @@
             %ul.menu-content.menu-content-2
             .fade-box
               %img.img-responsive.lazyload{ data-src: "public/assets/images/mushroom3.png" }
-      %section.crew.hidden-xs
+      %section.crew
         .row
           .col-md-4.col-sm-8.vcenter
             %h2.js-copy-crew-header
