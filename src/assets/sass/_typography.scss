@@ -9,6 +9,10 @@ $Cormorant: 'Cormorant Garamond', serif;
   Typography
 -------------------------*/
 
+html {
+  font-size: inherit;
+}
+
 body {
   color: #000;
   font-family: $Cormorant;

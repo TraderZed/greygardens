@@ -29,6 +29,9 @@
 /* -----------------------
   Typography
 -------------------------*/
+html {
+  font-size: inherit; }
+
 body {
   color: #000;
   font-family: "Cormorant Garamond", serif;
@@ -280,6 +283,34 @@ section.crew {
   section.crew .class-photo-image img {
     background: #fff;
     padding: 10px; }
+
+section.reservations #ot-reservation-widget {
+  position: relative;
+  top: 29px;
+  text-align: left; }
+
+section.reservations .ot-title {
+  display: none; }
+
+section.reservations .ot-dtp-picker.wide {
+  box-sizing: content-box;
+  width: 100%; }
+
+section.reservations .ot-dtp-picker.standard {
+  margin: 0 auto; }
+
+section.reservations .ot-dtp-picker-selector select {
+  left: 0; }
+
+section.reservations .ot-dtp-picker.wide .ot-dtp-picker-form .ot-dtp-picker-selector {
+  width: 24%; }
+
+section.reservations .ot-button {
+  background: #799F94;
+  box-shadow: 0 0 0 1px #799F94;
+  height: 100%; }
+  section.reservations .ot-button:hover, section.reservations .ot-button:focus {
+    background: #799F94; }
 
 footer {
   background: url(../images/bg2.jpg) center no-repeat;

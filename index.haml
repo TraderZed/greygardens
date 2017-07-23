@@ -32,7 +32,7 @@
                   %li
                     %a.nav-crew{href: "#"} The Crew
                   %li
-                    %a{href: "http://www.opentable.com/single.aspx?rid=730609&restref=730609", target: "_blank"} Reservations
+                    %a.nav-reservations{href: "#"} Reservations
     .container
       %section.intro
         .row
@@ -179,7 +179,15 @@
               %img.img-responsive.lazyload{ data-src: "public/assets/images/L99A8100.png" }
             %h3.js-copy-bio5-subheader
             %p.js-copy-bio5-body
-        
+      %section.reservations
+        .row
+          .col-lg-4.col-md-12.col-sm-12.vcenter
+            %h2.js-copy-reservations-header
+          .col-lg-8.col-md-12.col-sm-12.hidden-xs.hidden-sm.vcenter
+            %script{ src: "//www.opentable.com/widget/reservation/loader?rid=730609&domain=com&type=standard&theme=wide&lang=en&overlay=false&iframe=false"}
+          .col-lg-8.col-md-12.col-sm-12.visible-sm-block.visible-xs-block.vcenter
+            %script{ src: "//www.opentable.com/widget/reservation/loader?rid=730609&domain=com&type=standard&theme=standard&lang=en&overlay=false&iframe=false"}
+
       %section.quote
         .row
           .col-sm-1

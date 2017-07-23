@@ -231,6 +231,38 @@ section {
       }
     }
   }
+  &.reservations {
+    #ot-reservation-widget {
+      position: relative; top: 29px;
+      text-align: left;
+    }
+    .ot-title {
+      display: none;
+    }
+    .ot-dtp-picker {
+      &.wide {
+        box-sizing: content-box;
+        width: 100%;
+      }
+      &.standard {
+        margin: 0 auto;
+      }
+    }
+    .ot-dtp-picker-selector select {
+      left: 0;
+    }
+    .ot-dtp-picker.wide .ot-dtp-picker-form .ot-dtp-picker-selector {
+      width: 24%;
+    }
+    .ot-button {
+      background: #799F94;
+      box-shadow: 0 0 0 1px #799F94;
+      height: 100%;
+      &:hover, &:focus {
+        background: #799F94;
+      }
+    }
+  }
 }
 
 footer {

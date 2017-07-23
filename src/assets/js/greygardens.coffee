@@ -28,6 +28,10 @@ class @GreyGardens
       e.preventDefault()
       $('html, body').animate { scrollTop: $('.crew').offset().top - 100 }, 1000
 
+    $('.nav-reservations').click (e) ->
+      e.preventDefault()
+      $('html, body').animate { scrollTop: $('.reservations').offset().top - 100 }, 1000
+
   @getCopy: ->
     $.ajax(
       type: "GET",
