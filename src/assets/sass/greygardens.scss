@@ -152,7 +152,7 @@ section {
       }
       .phone-number {
         color: rgba(0, 0, 0, .7);
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         letter-spacing: 1px;
         margin: 0 ;
@@ -242,6 +242,7 @@ section {
     .ot-dtp-picker {
       &.wide {
         box-sizing: content-box;
+        margin-bottom: 20px;
         width: 100%;
       }
       &.standard {
