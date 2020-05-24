@@ -33,7 +33,7 @@ gulp.task('coffee', function() {
 
 //Watch task
 gulp.task('default', function() {
-  gulp.watch('./src/assets/sass/*.scss',['styles']);
-  gulp.watch('./*.haml',['haml']);
-  gulp.watch('./src/assets/js/*.coffee',['coffee']);
+  gulp.watch('./src/assets/sass/*.scss', gulp.series('styles'));
+  gulp.watch('./*.haml', gulp.series('haml'));
+  gulp.watch('./src/assets/js/*.coffee', gulp.series('coffee'));
 });
