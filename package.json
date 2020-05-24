@@ -26,6 +26,6 @@
   },
   "dependencies": {
     "gulp-haml": "latest",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.13"
   }
 }
