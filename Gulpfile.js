@@ -7,25 +7,25 @@ var concat = require('gulp-concat');
 var imagemin = require('gulp-imagemin');
 
 gulp.task('haml', function () {
-  gulp.src('./*.haml')
+  return gulp.src('./*.haml')
     .pipe(haml())
     .pipe(gulp.dest('./'));
 });
 
 gulp.task('styles', function() {
-  gulp.src('src/assets/sass/**/*.scss')
+  return gulp.src('src/assets/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./public/assets/css/'));
 });
 
 gulp.task('images', function() {
-  gulp.src('src/assets/images/*')
+  return gulp.src('src/assets/images/*')
     .pipe(imagemin())
     .pipe(gulp.dest('./public/assets/images/'));
 });
 
 gulp.task('coffee', function() {
-  gulp.src('src/assets/js/*.coffee')
+  return gulp.src('src/assets/js/*.coffee')
     .pipe(coffee({bare: true}))
     .pipe(uglify())
     .pipe(gulp.dest('./public/assets/js/'));

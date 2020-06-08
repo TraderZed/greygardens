@@ -43,8 +43,19 @@
             %h2.js-copy-note-header
             %p.js-copy-note-body
 
-            %iframe{height: "255", src: "http://editor.wix.com/shoutout/gs#/sosa-gs-widget/504f1fc8-ec81-4193-b09a-4b31ae99b890", style: "width:367px;height:255px;overflow:hidden;border:none;background:transparent;", width: "367"}
-
+            / Begin Mailchimp Signup Form
+            #mc_embed_signup
+              %form#mc-embedded-subscribe-form.validate{action: "https://greygardens.us17.list-manage.com/subscribe/post?u=89722a23a1e766679e6cd0130&id=726f263233", method: "post", name: "mc-embedded-subscribe-form", novalidate: "", target: "_blank"}
+                #mc_embed_signup_scroll
+                  %h4
+                    %label{for: "mce-EMAIL"} Join Our Newsletter
+                  %input#mce-EMAIL.email{name: "EMAIL", placeholder: "email address", required: "", type: "email", value: ""}/
+                  / real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                  %div{"aria-hidden" => "true", style: "position: absolute; left: -5000px;"}
+                    %input{name: "b_89722a23a1e766679e6cd0130_726f263233", tabindex: "-1", type: "text", value: ""}/
+                  .clear
+                    %input#mc-embedded-subscribe.button{name: "subscribe", type: "submit", value: "Subscribe"}/
+            / End mc_embed_signup
           .col-md-6.hidden-sm.hidden-xs
             .fade-box
               %img.img-responsive.lazyload{ data-src: "public/assets/images/06.jpg" }
